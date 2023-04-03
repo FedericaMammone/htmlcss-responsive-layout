@@ -43,10 +43,12 @@ header .container {
 .row {
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .col {
     width: 45%;
+    margin-bottom: 20px;
 }
 
     /* sezione developer */
@@ -58,6 +60,21 @@ header .container {
     width: 35%;
 }
 
+
+.colRow2 {
+    width: 28%;
+    
+}
+
+
+.row2 {
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+
+
+
     /* versione smartphone */
 
 @media screen and (max-width:480px) {
@@ -65,10 +82,12 @@ header .container {
         display: block;
     }
 
-    .col.app, .col.code {
+    .col.app, .col.code, .colRow2 {
         width: 100%;
         margin-bottom: 15px;
     }
+
+
 }    
 
 
@@ -106,7 +125,8 @@ footer {
     border: 1px solid black;
 }
 
-.col {
+.col, .colRow2  {
     min-height: 100px;
     background-color: green;
 }
+
