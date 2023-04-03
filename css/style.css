@@ -40,7 +40,7 @@ header .container {
 
 
 /* parte principale */
-.row {
+#devsection .row {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
@@ -128,6 +128,8 @@ margin-bottom: 20px;
     margin-top: 60px;
 }
 
+     /* versione smartphone */
+
 @media screen and (max-width:480px) {
     #plansection .container {
         display: block;
@@ -142,6 +144,154 @@ margin-bottom: 20px;
     }
 
 }
+
+/* versione tablet */
+@media screen and (max-width:768px) {
+    #plansection .container {
+        display: block;
+    }
+
+    .col1, .col2 {
+        width: 100%;
+    }
+
+    .minicontainer {
+        margin-top: 30px;
+    }
+}
+
+
+
+
+/* sezione testimonials */
+
+#testimonials .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#testimonials .row {
+    min-height: 100px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+}
+
+.img-testimonials {
+    height: 100px;
+    width: 25%;
+}
+
+.text-testimonials {
+    height: 100px;
+    width: 70%;
+    margin-left: 5%;
+}
+
+    /* versione smartphone */
+
+    @media screen and (max-width:480px) {
+        #testimonials .row {
+            display: block;
+        }
+
+        .img-testimonials, .text-testimonials{
+            width: 100%;
+            margin: 20px auto;
+        }
+    }
+
+
+
+/* sezione benefits */
+
+#benefits-desktop .container-desktop {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#benefits-desktop .title {
+    min-height: 100px;
+    background-color: yellow;
+    margin-bottom: 10px;
+}
+
+.container-desktop .row {
+    min-height: 100px;
+    display: flex;
+    gap: 20px;
+   
+}
+
+/* container tablet */
+.container-tablet {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#benefits-tablet .title {
+    min-height: 100px;
+    background-color: yellow;
+    margin-bottom: 10px;
+}
+
+.container-tablet .row {
+    min-height: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* container mobile */
+
+.container-mobile {
+    padding: 20px;
+}
+
+#benefits-mobile .title {
+    min-height: 100px;
+    background-color: yellow;
+    margin-bottom: 10px;
+}
+
+.container-mobile .col {
+    width: 100%;
+    margin: 10px auto;
+}
+
+
+
+/* versione tablet */
+@media screen and (max-width:768px) {
+
+    #benefits-tablet{
+        display: block;
+    }
+
+    #benefits-desktop {
+        display: none;
+    }
+
+    #benefits-mobile {
+        display: none;
+    }
+}
+
+/* versione mobile */
+    
+@media screen and (max-width:480px) {
+    #benefits-mobile {
+        display: block;
+    }
+
+    #benefits-tablet{
+        display: none;
+        
+    }
+}
+
 
 
 
@@ -164,7 +314,7 @@ footer {
 
 
 
-.container {
+.container, .container-desktop, .container-tablet {
     background-color: aqua;
     min-height: 50px;
 }
@@ -200,6 +350,15 @@ footer {
     }
 
     
+    /* sectiontestimonials */
+
+    #testimonials .row {
+        background-color: green;
+    }
+
+    .img-testimonials, .text-testimonials {
+        background-color: blue;
+    }
 
 
     /* footer */
