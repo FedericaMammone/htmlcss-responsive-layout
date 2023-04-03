@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    background-color: blue;
+    height: 100px;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menumobile {
+    display: none;
+}
+
+    /* versione tablet */
+
+@media screen and (max-width:768px) {
+    #menumobile {
+        display: block;
+    }
+
+    #menudesktop {
+        display: none;
+    }
+    
+}
+
+
+/* parte principale */
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    width: 45%;
+}
+
+    /* sezione developer */
+.col.app {
+    width: 55%;
+}
+
+.col.code {
+    width: 35%;
+}
+
+    /* versione smartphone */
+
+@media screen and (max-width:480px) {
+    #devsection .row {
+        display: block;
+    }
+
+    .col.app, .col.code {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}    
+
+
+/* footer */
+footer {
+    background-color: black;
+}
+
+
+
+
+
+
+
+/* DEBUG */
+section {
+    min-height: 150px;
+    background-color: brown;
+    margin-bottom: 20px;
+}
+
+footer {
+    min-height: 150px;
+}
+
+.container {
+    background-color: aqua;
+    min-height: 50px;
+}
+
+#logo, header nav {
+    min-height: 50px;
+    min-width: 50px;
+    background-color: blueviolet;
+    border: 1px solid black;
+}
+
+.col {
+    min-height: 100px;
+    background-color: green;
+}
