@@ -5,7 +5,7 @@
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -47,7 +47,7 @@ header .container {
 }
 
 .col {
-    width: 45%;
+    width: 40%;
     margin-bottom: 20px;
 }
 
@@ -73,8 +73,6 @@ header .container {
 }
 
 
-
-
     /* versione smartphone */
 
 @media screen and (max-width:480px) {
@@ -86,9 +84,68 @@ header .container {
         width: 100%;
         margin-bottom: 15px;
     }
-
-
 }    
+
+
+/* sezione planning */
+
+
+#plansection .container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.col1 {
+    width: 45%;
+    background-color: grey;
+}
+
+
+.col1 .img {
+
+min-height: 120px;
+margin-bottom: 20px;
+}
+
+.col1 .testo {
+   
+    min-height: 120px;
+}
+
+.col2 {
+    width: 45%;
+    background-color: blue;
+    
+}
+
+.minicontainer {
+    
+    min-height: 200px;
+    background-color: black;
+    margin-top: 60px;
+}
+
+@media screen and (max-width:480px) {
+    #plansection .container {
+        display: block;
+    }
+
+    .col1, .col2 {
+        width: 100%;
+    }
+
+    .minicontainer {
+        margin-top: 30px;
+    }
+
+}
+
+
+
+
 
 
 /* footer */
@@ -103,30 +160,49 @@ footer {
 
 
 /* DEBUG */
-section {
-    min-height: 150px;
-    background-color: brown;
-    margin-bottom: 20px;
-}
 
-footer {
-    min-height: 150px;
-}
+
+
 
 .container {
     background-color: aqua;
     min-height: 50px;
 }
 
-#logo, header nav {
-    min-height: 50px;
-    min-width: 50px;
-    background-color: blueviolet;
-    border: 1px solid black;
-}
+    /* header */
+    #logo, header nav {
+        min-height: 50px;
+        min-width: 50px;
+        background-color: blueviolet;
+        border: 1px solid black;
+    }
 
-.col, .colRow2  {
-    min-height: 100px;
-    background-color: green;
-}
+    /* main */
+    section {
+        min-height: 150px;
+        background-color: brown;
+        margin-bottom: 20px;
+    }
 
+    /* section developer */
+    .col, .colRow2  {
+        min-height: 100px;
+        background-color: green;
+    }
+
+    /* section planning */
+    .col1 .img  {
+        background-color: bisque;
+    }
+
+    .col1 .testo {
+        background-color: yellow;
+    }
+
+    
+
+
+    /* footer */
+    footer {
+        min-height: 150px;
+    }
