@@ -209,50 +209,90 @@ header .container {
 
 /* sezione planning */
 
+#plansection {
+    background-color: #9792E4;
+    margin-bottom: 30px;
+}
 
 #plansection .container {
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    background-color: #9792E4;
     
 }
 
 .col1 {
-    width: 45%;
-    background-color: grey;
+    width: 49%;
+    
 }
 
 
 .col1 .img {
+    min-height: 120px;
+    margin-bottom: 20px;
+}
 
-min-height: 120px;
-margin-bottom: 20px;
+
+
+.col1 img {
+    width: 100%;
+    vertical-align: bottom; 
 }
 
 .col1 .testo {
-   
     min-height: 120px;
+    color: white;
 }
+
+.testo h2, .testo p {
+    margin-bottom: 20px;
+}
+
 
 .col2 {
     width: 45%;
-    background-color: blue;
     
+    position: relative;
 }
 
 .minicontainer {
     
     min-height: 200px;
-    background-color: black;
-    margin-top: 60px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 40px;
+    
 }
+
+.col2 img {
+    height: 200px;
+}
+
+.minicontainer h1 {
+    margin-bottom: 20px;
+}
+
+.minicontainer button {
+    padding:15px 20px;
+    margin: 15px;
+    border-radius: 50%;
+    background-color: #9792E4;
+    font-size: 20px;
+}
+
+
 
      /* versione smartphone */
 
 @media screen and (max-width:480px) {
     #plansection .container {
-        display: block;
+        
+        padding: 20px;
     }
 
     .col1, .col2 {
@@ -261,6 +301,7 @@ margin-bottom: 20px;
 
     .minicontainer {
         margin-top: 30px;
+        position: initial;
     }
 
 }
@@ -269,6 +310,7 @@ margin-bottom: 20px;
 @media screen and (max-width:768px) {
     #plansection .container {
         display: block;
+        padding: 20px;
     }
 
     .col1, .col2 {
@@ -276,7 +318,9 @@ margin-bottom: 20px;
     }
 
     .minicontainer {
-        margin-top: 30px;
+        
+        position: initial;
+
     }
 }
 
@@ -470,6 +514,9 @@ margin-bottom: 20px;
 
 
 
+
+
+
 /* sezione call to action */
 
 #calltoaction .container {
@@ -533,13 +580,13 @@ footer .container {
     }
 
     /* section planning */
-    .col1 .img  {
+    /* .col1 .img  {
         background-color: bisque;
     }
 
     .col1 .testo {
         background-color: yellow;
-    }
+    } */
 
     
     /* sectiontestimonials */
