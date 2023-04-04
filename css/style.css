@@ -91,6 +91,7 @@ header .container {
 
 #devsection .col {
     background-color: #B5DDFF;
+    border-radius: 20px;
 }
 
 .col {
@@ -168,6 +169,7 @@ header .container {
     width: 28%;
     background-color: #B5DDFF;
     text-align: center;
+    border-radius: 20px;
 }
 
 
@@ -212,6 +214,7 @@ header .container {
 #plansection {
     background-color: #9792E4;
     margin-bottom: 30px;
+    
 }
 
 #plansection .container {
@@ -266,6 +269,7 @@ header .container {
     right: 0;
     text-align: center;
     margin-bottom: 40px;
+    border-radius: 20px;
 
 }
 
@@ -330,7 +334,8 @@ header .container {
 /* sezione testimonials */
 
 #testimonials .row {
-    background-color: #9792E4;;
+    background-color: #9792E4;
+    border-radius: 20px;
 }
 
 #testimonials .container {
@@ -342,12 +347,16 @@ header .container {
     min-height: 100px;
     margin-bottom: 20px;
     padding: 20px;
-    
     text-align: center;
+    line-height: 40px;
 }
 
 .title-row h1 {
     color: #9792E4;
+}
+
+.title-row p {
+    line-height: 25px;
 }
 
 #testimonials .row {
@@ -406,7 +415,7 @@ header .container {
 
 /* sezione benefits */
 
-.container-desktop, .container-tablet, .container-mobile {
+#benefits-desktop, #benefits-tablet, #benefits-mobile {
     background-color: #9792E4;
 }
 
@@ -416,12 +425,13 @@ header .container {
     padding: 20px;
 }
 
-#benefits-desktop .title {
-    min-height: 100px;
-    
+#benefits-desktop .title h1 {
     margin-bottom: 10px;
     text-align: center;
     color: white;
+    padding: 20px;
+    font-size: 30px;
+
 }
 
 .container-desktop .row {
@@ -431,9 +441,11 @@ header .container {
    
 }
 
+
 .container-desktop .col, .container-tablet .col, .container-mobile .col {
     padding: 20px;
     background-color: white;
+    border-radius: 20px;
 } 
 
 .container-desktop h2, .container-tablet h2, .container-mobile h2 {
@@ -463,11 +475,12 @@ header .container {
     padding: 20px;
 }
 
-#benefits-tablet .title {
-    min-height: 100px;
+#benefits-tablet .title h1 {
     margin-bottom: 10px;
     text-align: center;
     color: white;
+    padding: 20px;
+    font-size: 30px;
 }
 
 .container-tablet .row {
@@ -486,11 +499,12 @@ header .container {
     padding: 20px;
 }
 
-#benefits-mobile .title {
-    min-height: 100px;
+#benefits-mobile .title h1 {
     margin-bottom: 10px;
     text-align: center;
     color: white;
+    padding: 20px;
+    font-size: 30px;
 
 }
 
@@ -557,14 +571,71 @@ header .container {
 .col-right {
     width: 60%;
     min-height: 100px;
-    background-color: green;
+    
+    padding: 30px;
 }
 
-.col-left {
-    width: 35%;
-    min-height: 100px;
-    background-color: green;
+.col-right h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #9792E4;;
 }
+
+.col-right p {
+    margin-bottom: 30px;
+}
+
+
+.col-left {
+    width: 30%;
+    min-height: 100px;
+    
+}
+
+.img-aboutus {
+    width: 180px;
+    
+    
+    position: relative;
+    
+}
+
+.img-aboutus img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.col-left .fa-quote-left{
+    font-size: 70px;
+    color: #9792E4;
+    
+}
+
+
+.img-aboutus span {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.col-left button {
+    padding: 8px 10px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 20px;
+    background-color: #9792E4;
+    border: 0;
+}
+
+.col-left h1 {
+    margin-top: 20px;
+    color: #9792E4;
+}
+
+
 
     /* versione mobile */
 
@@ -590,11 +661,44 @@ header .container {
 
 /* sezione call to action */
 
-#calltoaction .container {
-    text-align: center;
+#calltoaction {
+    background-color: #9792E4;
 }
 
+#calltoaction .container {
+    text-align: center;
+    color: white;
+}
 
+#calltoaction button {
+    padding: 15px 40px;
+    border-radius: 25px;
+    color: #9792E4;
+    background-color: white;
+    border: 0;
+
+    font-size: 15px;
+}
+
+#calltoaction {
+    line-height: 50px;
+}
+
+#calltoaction h1 {
+    font-size: 80px;
+    margin: 10px 0;
+    color: #FDC15F;
+}
+
+#calltoaction h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#calltoaction p {
+    line-height: 20px;
+    margin: 20px 0;
+}
 
 
 
@@ -606,6 +710,12 @@ footer {
 
 footer .container {
     text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+footer p {
+    margin-bottom: 50px;
 }
 
 
@@ -619,10 +729,10 @@ footer .container {
 
 
 
-.container, .container-desktop, .container-tablet {
+/* .container, .container-desktop, .container-tablet {
     background-color: aqua;
     min-height: 50px;
-}
+} */
 
     /* header */
     /* #logo, header nav {
@@ -635,8 +745,8 @@ footer .container {
     /* main */
     section {
         min-height: 150px;
-        background-color: brown;
-        margin-bottom: 20px;
+        /* background-color: brown;
+        margin-bottom: 20px; */
     }
 
     /* section developer */
@@ -645,10 +755,10 @@ footer .container {
         background-color: green;
     } */
 
-    .col  {
+    /* .col  {
         min-height: 100px;
         background-color: green;
-    }
+    } */
 
     /* section planning */
     /* .col1 .img  {
@@ -672,12 +782,12 @@ footer .container {
 
     /* benefits */
 
-    #benefits-desktop .title, #benefits-tablet .title, #benefits-mobile .title {
+    /* #benefits-desktop .title, #benefits-tablet .title, #benefits-mobile .title {
         background-color: yellow;
-    }
+    } */
 
 
-    /* footer */
+    /* footer
     footer {
         min-height: 150px;
-    }
+    } */
