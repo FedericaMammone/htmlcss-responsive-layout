@@ -406,6 +406,10 @@ header .container {
 
 /* sezione benefits */
 
+.container-desktop, .container-tablet, .container-mobile {
+    background-color: #9792E4;
+}
+
 #benefits-desktop .container-desktop {
     width: 80%;
     margin: 0 auto;
@@ -414,8 +418,10 @@ header .container {
 
 #benefits-desktop .title {
     min-height: 100px;
-    background-color: yellow;
+    
     margin-bottom: 10px;
+    text-align: center;
+    color: white;
 }
 
 .container-desktop .row {
@@ -424,6 +430,31 @@ header .container {
     gap: 20px;
    
 }
+
+.container-desktop .col, .container-tablet .col, .container-mobile .col {
+    padding: 20px;
+    background-color: white;
+} 
+
+.container-desktop h2, .container-tablet h2, .container-mobile h2 {
+    font-size: 50px;
+    color: #9792E4;
+}
+
+.container-desktop h3, .container-tablet h3, .container-mobile h3 {
+    color: #9792E4;
+    margin-bottom: 20px;
+}
+
+.container-desktop button, .container-tablet button, .container-mobile button {
+    padding: 8px 40px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 20px;
+    background-color: #9792E4;
+    border: 0;
+}
+
 
 /* container tablet */
 .container-tablet {
@@ -434,15 +465,19 @@ header .container {
 
 #benefits-tablet .title {
     min-height: 100px;
-    background-color: yellow;
     margin-bottom: 10px;
+    text-align: center;
+    color: white;
 }
 
 .container-tablet .row {
     min-height: 100px;
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+}
+
+.container-tablet .col {
+    width: 100%;
 }
 
 /* container mobile */
@@ -453,14 +488,18 @@ header .container {
 
 #benefits-mobile .title {
     min-height: 100px;
-    background-color: yellow;
     margin-bottom: 10px;
+    text-align: center;
+    color: white;
+
 }
 
 .container-mobile .col {
     width: 100%;
     margin: 10px auto;
 }
+
+
 
 
 /* versione desktop */
@@ -474,12 +513,7 @@ header .container {
         display: none;
     }
 
-   
-
 }
-
-
-
 
 /* versione tablet */
 @media screen and (max-width:768px) {
@@ -635,6 +669,12 @@ footer .container {
     /* .img-testimonials, .text-testimonials {
         background-color: blue;
     } */
+
+    /* benefits */
+
+    #benefits-desktop .title, #benefits-tablet .title, #benefits-mobile .title {
+        background-color: yellow;
+    }
 
 
     /* footer */
