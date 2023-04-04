@@ -296,7 +296,7 @@ margin-bottom: 20px;
     }
 }
 
-/* versione mobile */
+    /* versione mobile */
     
 @media screen and (max-width:480px) {
     #benefits-mobile {
@@ -331,6 +331,8 @@ margin-bottom: 20px;
     background-color: green;
 }
 
+    /* versione mobile */
+
 @media screen and (max-width:480px) {
     #aboutus .container {
         display: block;
@@ -348,11 +350,24 @@ margin-bottom: 20px;
 
 
 
+/* sezione call to action */
+
+#calltoaction .container {
+    text-align: center;
+}
+
+
+
+
 
 
 /* footer */
 footer {
     background-color: black;
+}
+
+footer .container {
+    text-align: center;
 }
 
 
