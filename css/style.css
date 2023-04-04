@@ -262,6 +262,23 @@ margin-bottom: 20px;
 }
 
 
+/* versione desktop */
+
+@media screen and (min-width:769px) {
+    #benefits-mobile {
+        display: none;
+    }
+
+    #benefits-tablet{
+        display: none;
+    }
+
+   
+
+}
+
+
+
 
 /* versione tablet */
 @media screen and (max-width:768px) {
@@ -293,6 +310,41 @@ margin-bottom: 20px;
 }
 
 
+/* sezione about us */
+
+#aboutus .container {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.col-right {
+    width: 60%;
+    min-height: 100px;
+    background-color: green;
+}
+
+.col-left {
+    width: 35%;
+    min-height: 100px;
+    background-color: green;
+}
+
+@media screen and (max-width:480px) {
+    #aboutus .container {
+        display: block;
+    }
+
+    .col-right, .col-left {
+        width: 100%;
+        
+    }
+
+    .col-right{
+        margin-bottom: 20px;
+    }
+}
 
 
 
