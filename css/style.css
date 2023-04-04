@@ -86,6 +86,11 @@ header .container {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    padding
+}
+
+#devsection .col {
+    background-color: #B5DDFF;
 }
 
 .col {
@@ -96,16 +101,73 @@ header .container {
     /* sezione developer */
 .col.app {
     width: 55%;
+    position: relative;
 }
 
+.app div {
+    width: 50%;
+    padding: 20px;
+}
+
+.app img {
+    height: 250px;
+    padding: 20px 30px 0 0;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+
+.app button {
+    padding: 10px 40px;
+    border-radius: 20px;
+    background-color: #0084FD;
+    color: white;
+    border: 0;
+}
+
+.app h2, .colRow2 h2 {
+    color: #0084FD;
+}
+
+.app p, .colRow2 p {
+    color: #5A6E7F;
+}
+
+
+.app h2, .app p, .colRow2 h2, .colRow2 p  {
+    margin-bottom: 30px;
+}
+
+
 .col.code {
-    width: 35%;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.fa-file-code, .fa-compass-drafting, .fa-laptop-code, .fa-bullhorn  {
+    font-size: 80px;
+    color: #0084FD;
+    margin: 20px 0;
+}
+
+.col.code h2 {
+    margin-bottom: 20px;
+    color: #0084FD;
+}
+
+.col.code p {
+    color: #5A6E7F;
 }
 
 
 .colRow2 {
     width: 28%;
-    
+    background-color: #B5DDFF;
+    text-align: center;
 }
 
 
@@ -127,6 +189,22 @@ header .container {
         margin-bottom: 15px;
     }
 }    
+
+    /* versione tablet */
+    @media screen and (max-width:768px) {
+        .app div {
+            width: 100%;
+            
+        }
+
+        .app img  {
+            position: initial;
+            vertical-align: bottom;
+        
+        }
+    }
+
+
 
 
 /* sezione planning */
@@ -444,7 +522,12 @@ footer .container {
     }
 
     /* section developer */
-    .col, .colRow2  {
+    /* .colRow2  {
+        min-height: 100px;
+        background-color: green;
+    } */
+
+    .col  {
         min-height: 100px;
         background-color: green;
     }
